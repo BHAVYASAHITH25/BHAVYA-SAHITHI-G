@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two-Column Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+      overflow: hidden; /* Clear floats */
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar {
+      float: left;
+      width: 30%;
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+    .main {
+      float: left;
+      width: 70%;
+      padding: 20px;
+    }
+    footer {
+      clear: both;
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+    h2 {
+      color: #2980b9;
+      margin-bottom: 15px;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #2c3e50;
+    }
+    ul li a:hover {
+      color: #e74c3c;
+    }
+    @media (max-width: 768px) {
+      .sidebar, .main {
+        width: 100%;
+        float: none;
+        border-right: none;
+      }
+      header {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    My Two-Column Layout
+  </header>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>Main Content</h2>
+      <p>This layout uses CSS floats to create a two-column structure. The sidebar is 30% wide, and the main content takes up the remaining 70%.</p>
+      <p>It’s wrapped in a responsive container that adapts to smaller screens using media queries. You can easily extend this layout with more sections or convert it to Flexbox or Grid for modern responsiveness.</p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 My Website. All rights reserved.
+  </footer>
+</body>
+</html>
