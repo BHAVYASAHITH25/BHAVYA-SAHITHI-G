@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHAVYA SAHITHI G | (PORTFOLIO)</title>
+    <link href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffreepng%2Fgirl-in-black-suit-passport-photo-avatar-illustration_21410962.html&psig=AOvVaw2jNNUt57aX1u8x65K3JgAx&ust=1761831426788000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOj0neLDyZADFQAAAAAdAAAAABAE" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a90e2;  
+            --secondary-color: #f0f4f8; 
+            --text-color: #333;
+            --light-text-color: #555;
+            --accent-color: #ff6b6b;   
+            --font-stack: 'Poppins', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background-color: #98f0d5;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+        body {
+            font-family:segoe (--font-stack);
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #e0f7fa 0%, hsl(199, 89%, 86%) 100%);
+            min-height: 100vh;
+            padding-top: 80px; 
+        }
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            margin-bottom: 0.5em;
+            color: var(--text-color);
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        .navbar a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 400;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            color: var(--primary-color);
+        }
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 40px;
+            margin-bottom: 40px;   
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        .hero-content {
+            max-width: 55%;
+        }
+        .hero-content h2 {
+            font-size: 3.2rem;
+            line-height: 1.1;
+            color: var(--primary-color);
+            margin-top: 5px;
+        }
+        .greeting {
+            font-size: 1.3rem;
+            color: var(--light-text-color);
+            margin-bottom: 10px;
+        }
+        .hero-image {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, var(--primary-color), #81c784);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 25px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #387ee3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .secondary {
+            background-color: var(--accent-color);
+        }
+        .secondary:hover {
+            background-color: #e55a5a;
+        }
+        .projects-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .projects-section h3 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .project-card {
+            padding: 30px;
+            border-radius: 12px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 6px solid var(--primary-color);   
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2px);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .skills-card {
+            border-left-color: var(--accent-color);
+        }
+        .skills-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skills-card li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            font-weight: 300;
+        }
+        .skills-card li::before {
+            content: '✓';
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: 600;
+        }
+        .contact-section {
+            text-align: center;
+            padding: 60px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--light-text-color);
+            font-size: 0.9rem;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            .navbar nav {
+                margin-top: 10px;
+            }
+            .navbar nav a {
+                margin: 0 8px;
+            }
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+            .hero-content, .hero-image {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            .hero-image {
+                margin-top: 30px;
+            }
+            .hero-content h2 {
+                font-size: 2.5rem;
+            }
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">BHAVYA SAHITHI G</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="hero-section">
+            <div class="hero-content">
+                <p class="greeting" id="greeting-text">Hello, I'm</p>
+                <h2>FULL STACK DEVELOPER</h2>
+                <p>
+                   From conceptual design to seamless deployment, I build high-performance web applications that just work.
+                </p>
+                <a href="#projects" class="cta-button">Explore My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://png.pngtree.com/png-vector/20250719/ourlarge/pngtree-girl-in-black-suit-passport-photo-avatar-illustration-png-image_16804385.webp ">
+            </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <h3>Featured Projects & Skills</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>ABOUT ME</h4>
+                    <p>Full-Stack Developer specializing in React and Node.js with a passion for building scalable, user-centric web applications. I transform complex problems into clean, efficient code and seamless digital experiences. Dedicated to continuous learning and driving innovation in tech.</p>.</p>
+                </div>
+                <div class="project-card">
+                    <h4>API Service Layer</h4>
+                <p> Designed and deployed a high-performance REST API with **Node.js and MongoDB** for data delivery. </p>
+                </div>
+                <div class="project-card skills-card">
+                    <h4>Core Toolkit</h4>
+                    <ul>
+                        <li>HTML5, CSS3, SCSS</li>
+                        <li>JavaScript (React, Vue)</li>
+                        <li>Node.js & Express</li>
+                        <li>Git & Docker</li>
+                    </ul>
+                </div>
+               <table>
+    <caption>hobbies and achievements</caption>
+    <thead>
+      <tr>
+        <th>serial no.</th>
+        <th>hobbies</th>
+        <th>achievements</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>badminton</td>
+        <td>destinction</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>volly ball</td>
+        <td>1st class</td>
+      </tr>
+    </tbody>
+  </table> 
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h3>Let's Connect and Collaborate!</h3>
+            <p>I am available for freelance work and new opportunities.</p>
+            <a href="mailto:you@example.com" class="cta-button secondary">Send An Email</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bhavya sahithi G. Handcrafted with passion.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const greetingElement = document.getElementById('greeting-text');
+            const hour = new Date().getHours();
+            let greetingText = "Hello, I'm";
+            if (hour < 12) {
+                greetingText = "Good Morning, I'm";
+            } else if (hour < 18) {
+                greetingText = "Good Afternoon, I'm";
+            } else {
+                greetingText = "Good Evening, I'm";
+            }
+            greetingElement.textContent = greetingText;
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
